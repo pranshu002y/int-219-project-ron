@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .bo {
+        background-image: url(gaming-on-slide.jpg);
+        height: 700px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin-top: 50px;
+      }
+      .featurebox {
+        border: 2px solid midnightblue;
+        background-color: darkslategrey;
+        color: white;
+        padding: 10px;
+        margin-left: 950px;
+        position: absolute;
+        margin-top: 100px;
+        width: 500px;
+        height: 300px;
+        overflow: auto;
+      }
+      dt{
+        color:orange;
+        font-size: large;
+      }
+
+      image {
+        height: 400px;
+        width: 400px;
+        margin-top: 50px;
+        margin-left: 40px;
+        border-radius: 40px;
+      }
+
+      .imagesl {
+        height: 500px;
+        width: 600px;
+
+        display: none;
+      }
+
+      .imco {
+        margin-left: 300px;
+        margin-top: 30px;
+        height: 500px;
+        width: 600px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="#" class="logo"
+        ><img
+          src="logo.png"
+          style="height: 40px; width: 40px; border: 1px; border-radius: 20px"
+      /></a>
+      <ul class="menu">
+        <li><a href="project.html">HOME</a></li>
+        <li><a href="project2.html">BEST SELLER</a></li>
+        <li><a href="gata.html">GALLERY</a></li>
+        <li><a href="co.html">CONTACT</a></li>
+      </ul>
+      <a href="#" class="en"></a>
+    </nav>
+
+    <div class="con">
+      <div class="box">
+        <p class="p">
+          HELLO WELCOME TO MOBILE GALLERY. HERE YOU CAN SEE ALL ABOUT MOBILE
+          MODELS WITH THEIR SPECIFICATIONS.
+        </p>
+      </div>
+    </div>
+    <div style="display: flex; margin-top: 40px; height: 400px; width: 100%">
+      <img src="giphy.gif" />
+      <p
+        style="
+          margin-top: 100px;
+          margin-left: 500px;
+          color: white;
+          font-size: 50px;
+        "
+      >
+        CONNECT EVERYONE
+      </p>
+    </div>
+    <div style="display: flex; margin-top: 40px; height: 400px; width: 100%">
+      <p
+        style="
+          margin-top: 100px;
+          margin-left: 50px;
+          color: white;
+          font-size: 70px;
+        "
+      >
+        EASY SURF
+      </p>
+      <img src="smms-social-media-makes-sense.gif" style="margin-left: 500px" />
+    </div>
+
+    <div class="bo"></div>
+    <div style="background-color: lightslategrey; padding: 1px">
+      <p
+        style="
+          margin-top: 50px;
+          margin-left: 200px;
+          font-size: 70px;
+          color: white;
+        "
+      >
+        BETTER GAMING EXPIRENCE
+      </p>
+    </div>
+    <div class="featurebox">
+      <dl>
+        <dt>Flagship Snapdragon 8+ Gen 1 Edge for super-fast performance</dt>
+        <dd>
+          A phone's true experience is mostly defined by its performance.The new
+          Snapdragon 8+ Gen 1 chipset, known for offering high-level
+          performance, enhanced battery efficiency and multitasking abilities on
+          the go. The improved Qualcomm Kryo CPU delivers faster, more efficient
+          on-device cross-tasking, especially helpful during all the times when
+          you are using intensive applications. The Snapdragon 8+ Gen 1's
+          Octa-core CPU, on the other hand, offers 10% faster CPU performance
+          with a 30% improvement in power efficiency, delivering flawless
+          multitasking, entertainment and gaming experience on your phone.
+        </dd>
+        <dt>
+          Enhanced storage and memory capabilities to cover all your needs
+        </dt>
+        <dd>
+          OnePlus 10T 5G surprises with its high storage option of upto 256GB
+          and 16GB of LPDDR5 RAM, thanks to a series of memory optimizations.
+          Where this helps: When users want to operate multiple apps or save
+          important data ready for access from anywhere. Often phones tend to
+          hang or heat up if put to intense usage. With the OnePlus 10T 5G, the
+          company claims, you can suspend over 35 applications simultaneously,
+          leading to a faster, smoother, and uninterrupted user experience.
+        </dd>
+        <dt>A next-gen 3D cooling system to keep it ultra cool all-day</dt>
+        <dd>
+          Talking about heating in smartphones, it is a very common occurrence
+          that doesn't just impact the performance of your phone but is also not
+          good for a user's health. OnePlus has, therefore, designed its latest
+          launch in a way it maintains high-performance levels for longer
+          periods by offering a large cooling area.
+          <br>
+          <b>How this works:</b> The phone
+          has a cryo velocity vapour chamber, the largest so far in any OnePlus
+          device, with 8 dissipation channels. This feature gives twice the
+          dissipation ability compared to traditional smartphone vapour chambers
+          and helps keep it cool despite hours of uninterrupted usage.
+        </dd>
+      </dl>
+    </div>
+    <div class="imco">
+      <img src="GameOn.webp" class="imagesl" style="display: block" />
+      <img src="liquid-cooling.jpg" class="imagesl" />
+      <img src="triggers.jpg" class="imagesl" />
+    </div>
+    <button onclick="my(1)" style="font-family: cursive">>></button>
+
+    <a href="project2.html"
+      ><button style="font-family: cursive">N E X T</button></a
+    >
+  </body>
+
+  <script>
+    var index = 1;
+    function my(x) {
+      var a = 0;
+      var b = x;
+      if (index < 3) {
+        document.getElementsByClassName("imagesl")[index].style.display =
+          "block";
+        for (let i = 0; i < index; i++) {
+          document.getElementsByClassName("imagesl")[i].style.display = "none";
+        }
+
+        index = index + b;
+        console.log(index);
+      } else {
+        document.getElementsByClassName("imagesl")[2].style.display = "none";
+        index = 0;
+        document.getElementsByClassName("imagesl")[index].style.display =
+          "block";
+        index = index + 1;
+      }
+    }
+  </script>
+</html>

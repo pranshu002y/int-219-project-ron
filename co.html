@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact
+        {
+            margin-left: 400px;
+            height: 500px;
+            width: 500px;
+          
+            background :none;
+           
+        }
+        .input
+        {
+            margin-left: 30px;
+            margin-top: 50px;
+            
+    
+        }
+        td{
+            font-size: 30px;
+            color: white;
+        }
+        input
+        {
+            height: 50px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body style="background-image: url(light-back.jpg);">
+    <nav>
+        <a href="#" class="logo"><img src="logo.png" style="height: 40px; width: 40px; border: 1px ; border-radius: 20px;"></a>
+        <ul class="menu">
+            <li><a href="project.html">HOME</a></li>
+            <li><a href="project2.html">BEST SELLER</a></li>
+            <li><a href="gata.html">GALLERY</a></li>
+            <li><a href="co.html">CONTACT</a></li>
+        </ul>
+        <a href="#" class="en"></a>
+    </nav>
+    <center><h1 style="margin-left: 0px;"">CONTACT US</h1></center>
+    <div class="contact">
+       <div class="input">
+           <form>
+               <table>
+                   <tr>
+                       <td>NAME : </td>
+                       <td><input id="in1" type="text" name="name" placeholder="YOUR NAME"></td>
+                   </tr>
+                   <tr>
+                    <td>EMAIL : </td>
+                    <td><input type="text" name="EMAIL" placeholder="YOUR MAIL" id="in2"></td>
+                </tr>
+                <tr>
+                    <td>PHONE : </td>
+                    <td><input type="number" name="phone" placeholder="YOUR PHONENO." id="in3"></td>
+                </tr>
+               
+             
+               </table>
+            </form>
+               <center><h2>FEEDBACK</h2></center>
+               <input id="feed" type="text" name="FEEDBACK" placeholder="PROVIDE FEEDBACK" style="height: 100px; width: 400px; background: white; border: 2px solid black;border-radius: 20px;">
+          
+       
+       </div>
+       <div>
+           <button style="margin-left: 200px; margin-top: 40px; border: 2px solid black ; background: cadetblue;color: black;" onclick="SUB()">SUBMIT</button>
+       </div>
+    </div>
+       <a href="gata.html" ><button style="font-family: cursive; color: black; margin-left: 10px;">P R E V</button></a>
+    
+    
+</body>
+<script>
+    function SUB()
+    {
+       var name =document.getElementById('in1')
+       var email =document.getElementById('in2')
+       var phone =document.getElementById('in3')
+       var feed =document.getElementById('feed')
+       let x=0
+       if(name.value == "")
+       {
+           alert("ENTER NAME")
+       }
+       else if(email.value == "")
+       {
+           alert("ENTER EMAIl")
+       }
+       else if(phone.value == "")
+       {
+           alert("ENTER NUMBER")
+       }
+       else if(feed.value == "")
+       {
+           alert("ENTER feedback")
+       }
+   
+       else
+       {
+           alert("FORM SUBMITTED")
+           x=1
+       
+     }
+     if(x==1)
+     {
+         name.value=""
+         phone.value=""
+         email.value=""
+         feed.value=""
+     }
+       
+       
+        
+      
+    }
+</script>
+</html>
